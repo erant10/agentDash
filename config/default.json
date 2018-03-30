@@ -1,0 +1,28 @@
+{
+  "APP": {
+    "PORT": 8800,
+    "SSL": {
+      "KEY_PATH": "/etc/letsencrypt/live/dnalab.center/privkey.pem",
+      "CERT_PATH": "/etc/letsencrypt/live/dnalab.center/fullchain.pem"
+    }
+  },
+  "ibm": {
+    "host": "https://stream.watsonplatform.net",
+    "APIs": [
+      {
+        "speechToText": {
+          "name": "speech-to-text-kjddn-speech-to--1520920486014",
+          "plan": "lite",
+          "credentials": {
+            "suffix": "/speech-to-text/api/v1",
+            "username": "ea55b0bf-148e-4d5a-92c7-28007126d1d3",
+            "password": "orKHEoNeFwcy"
+          }
+        }
+      },
+      {
+        "conversation": {}
+      }
+    ]
+  }
+}
