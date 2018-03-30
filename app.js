@@ -4,9 +4,16 @@ var favicon = require('serve-favicon');
 var logger = require('morgan');
 var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
-
+const mongoose = require('mongoose');
 
 var app = express();
+
+//connect the app to the mongo instanse
+mongoose.Promise = global.Promise;
+if(process.env.NODE_ENV !== 'test') {
+    // connect to the app DB if we are not in the test environment
+    mongoose.connect('mongodb://localhost/agentDash');
+}
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
@@ -22,13 +29,12 @@ app.use(express.static(path.join(__dirname, 'public')));
 // main index routes
 var index = require('./routes/index');
 app.use('/', index);
-// user routes
-var users = require('./routes/users');
-app.use('/users', users);
+// agent routes
+var agents = require('./routes/agents');
+app.use('/agents', agents);
 // watson routs
 var watson = require('./routes/watson');
 app.use('/watson', watson);
-
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {

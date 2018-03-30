@@ -9,7 +9,7 @@ Installing Dependencies
 npm install
 ```
 
-###Build Dev
+### Build Dev
 
 Watch for real-time changes in both server side and client side
 

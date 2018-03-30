@@ -2,8 +2,8 @@
   "APP": {
     "PORT": 8800,
     "SSL": {
-      "KEY_PATH": "<PATH TO SSL KEY>",
-      "CERT_PATH": "<PATH TO SSL CERT>"
+      "KEY_PATH": "/etc/letsencrypt/live/dnalab.center/privkey.pem",
+      "CERT_PATH": "/etc/letsencrypt/live/dnalab.center/fullchain.pem"
     }
   },
   "ibm": {
@@ -15,8 +15,8 @@
           "plan": "lite",
           "credentials": {
             "suffix": "/speech-to-text/api/v1",
-            "username": "<USERNAME>",
-            "password": "<PASSWORD>"
+            "username": "ea55b0bf-148e-4d5a-92c7-28007126d1d3",
+            "password": "orKHEoNeFwcy"
           }
         }
       },
