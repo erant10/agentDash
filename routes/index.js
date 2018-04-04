@@ -4,7 +4,7 @@ var pjson = require('./../package.json');
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
-  res.render('index', { title: pjson.name });
+  res.render('agent.pug', { title: pjson.name });
 });
 
 module.exports = router;

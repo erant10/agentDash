@@ -1,0 +1,70 @@
+doctype html
+head
+    meta(charset='UTF-8')
+    title Chat Widget
+    link(rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css')
+    link(rel='stylesheet prefetch' href='https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css')
+    link(rel='stylesheet' href='stylesheets/style.css')
+    // credit - https://codepen.io/drehimself/pen/KdXwxR
+.container.clearfix
+    .chat
+        .chat-header.clearfix
+            img(src='https://s3-us-west-2.amazonaws.com/s.cdpn.io/195612/chat_avatar_01_green.jpg' alt='avatar')
+            .chat-about
+                .chat-with Conversation with John Doe
+                .chat-num-messages online
+            i.fa.fa-star
+        // end chat-header
+        .chat-history
+            ul
+
+        // end chat-history
+        .chat-message.clearfix
+            textarea#message-to-send(name='message-to-send' placeholder='Type your message' rows='3')
+            i.fa.fa-file-o &nbsp;&nbsp;
+            i.fa.fa-file-image-o
+            button#start_listen
+                i.fa.fa-microphone
+                | &nbsp; Start Listening
+            button#stop_listen.hidden
+                i.fa.fa-microphone-slash
+                | &nbsp; Stop Listening
+        // end chat-message
+    // end chat
+// end container
+script#message-template(type='text/x-handlebars-template').
+    <li class="clearfix" data-timing="{{timing}}">
+    <div class="message-data align-right">
+    <span class="message-data-time" >{{time}}, Today</span> &nbsp; &nbsp;
+    <span class="message-data-name" >{{name}}</span> <i class="fa fa-circle me"></i>
+    </div>
+    <div class="message other-message float-right">
+    {{messageOutput}}
+    </div>
+    </li>
+script#message-response-template(type='text/x-handlebars-template').
+    <li data-timing="{{timing}}">
+    <div class="message-data">
+    <span class="message-data-name"><i class="fa fa-circle online"></i> {{name}}</span>
+    <span class="message-data-time">{{time}}, Today</span>
+    </div>
+    <div class="message my-message">
+    {{messageOutput}}
+    </div>
+    </li>
+script#typing-template(type='text/x-handlebars-template').
+    <li>
+    <div class="message-data">
+    <span class="message-data-name"><i class="fa fa-circle online"></i> {{name}}</span>
+    <span class="message-data-time">{{time}}, Today</span>
+    </div>
+    <i class="fa fa-circle online"></i>
+    <i class="fa fa-circle online" style="color:#AED2A6"></i>
+    <i class="fa fa-circle online" style="color:#DAE9DA"></i>
+    </li>
+script(src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js')
+script(src='http://cdnjs.cloudflare.com/ajax/libs/handlebars.js/3.0.0/handlebars.min.js')
+script(src='http://cdnjs.cloudflare.com/ajax/libs/list.js/1.1.1/list.min.js')
+script(src='javascripts/bundle.js')
+
+//script(src='javascripts/chat.js')
