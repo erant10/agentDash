@@ -1,0 +1,103 @@
+.main-content {
+    margin: 30px 10%;
+
+}
+
+.col-grid {
+    padding: 0 20px;
+}
+
+.attribute {
+	font-weight: 600;
+}
+
+.profile-avatar {
+	/* This image is 687 wide by 1024 tall, similar to your aspect ratio */
+    background-image: url('https://s3.amazonaws.com/uifaces/faces/twitter/olgary/128.jpg');
+    /* make a square container */
+    width: 120px;
+    height: 120px;
+    /* fill the container, preserving aspect ratio, and cropping to fit */
+    background-size: cover;
+    /* center the image vertically and horizontally */
+    background-position: top center;
+    /* round the edges to a circle with border radius 1/2 container size */
+    border-radius: 50%;
+    float: left;
+}
+
+.profile-perffered {
+	color: #fd7e14;
+	position: absolute;
+    top: 50px;
+    left: 120px;
+    font-size: x-large;
+}
+
+.profile-info {
+	padding-left: 150px;
+}
+
+.profile-info .gold-member {
+    color: #fd7e14;
+}
+
+.profile-history {
+	margin-top: 10px;
+}
+
+a.profile-previous-engagements {
+	text-decoration: none;
+	padding-bottom: 5px;
+}
+
+.engagement-action-button {
+	border-radius: 50% !important;
+	color: white !important;
+	font-size: 40px !important;
+}
+.action{
+	text-align:center;
+}
+
+.action-end>a {
+	background-color:#f44242;
+}
+
+.action-mute>a {
+	background-color:#4286f4;
+}
+
+.action-start>a {
+	background-color:#3ac461;
+}
+
+.sentiment-value {
+    color: #f44242;
+    font-size: 200%;
+}
+
+.action {
+	float:left;
+}
+
+.suggestion {
+	cursor: pointer;
+}
+
+.odometer {
+  font-size: 40px;
+}
+
+img.avatar {
+    width:50px;
+    height: 50px;
+}
+
+.large-icon {
+    font-size: 150%;
+}
+
+.suggestion-text {
+    margin: 5px;
+}
