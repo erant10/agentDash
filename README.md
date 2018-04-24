@@ -5,7 +5,7 @@
 
 Installing Dependencies
 
-```shell
+```{shell}
 npm install
 ```
 
@@ -13,6 +13,6 @@ npm install
 
 Watch for real-time changes in both server side and client side
 
-```shell
+```{shell}
 npm run start-dev
 ```
