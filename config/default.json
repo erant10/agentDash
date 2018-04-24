@@ -4,19 +4,20 @@
     "SSL": {
       "KEY_PATH": "/etc/letsencrypt/live/dnalab.center/privkey.pem",
       "CERT_PATH": "/etc/letsencrypt/live/dnalab.center/fullchain.pem"
-    }
+    },
+    "SERVER": false
   },
   "ibm": {
     "host": "https://stream.watsonplatform.net",
     "APIs": [
       {
         "speechToText": {
-          "name": "speech-to-text-kjddn-speech-to--1520920486014",
+          "name": "Speech to Text-8q",
           "plan": "lite",
           "credentials": {
             "suffix": "/speech-to-text/api/v1",
-            "username": "ea55b0bf-148e-4d5a-92c7-28007126d1d3",
-            "password": "orKHEoNeFwcy"
+            "username": "4a9c0a4e-4dca-46fa-ba7a-03310ea029c3",
+            "password": "Eyr7ebPW1bPB"
           }
         }
       },

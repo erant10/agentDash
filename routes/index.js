@@ -7,4 +7,9 @@ router.get('/', function(req, res, next) {
   res.render('agent.pug', { title: pjson.name });
 });
 
+/* GET home page. */
+router.get('/eva', function(req, res, next) {
+    res.render('eva.pug', { title: pjson.name });
+});
+
 module.exports = router;

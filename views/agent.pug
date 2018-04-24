@@ -33,7 +33,7 @@ head
     // end chat
 // end container
 script#message-template(type='text/x-handlebars-template').
-    <li class="clearfix" data-timing="{{timing}}">
+    <li class="clearfix" data-timing-from="{{from}}" data-timing-to="{{to}}">
     <div class="message-data align-right">
     <span class="message-data-time" >{{time}}, Today</span> &nbsp; &nbsp;
     <span class="message-data-name" >{{name}}</span> <i class="fa fa-circle me"></i>
@@ -43,7 +43,7 @@ script#message-template(type='text/x-handlebars-template').
     </div>
     </li>
 script#message-response-template(type='text/x-handlebars-template').
-    <li data-timing="{{timing}}">
+    <li data-timing-from="{{from}}" data-timing-to="{{to}}">
     <div class="message-data">
     <span class="message-data-name"><i class="fa fa-circle online"></i> {{name}}</span>
     <span class="message-data-time">{{time}}, Today</span>
