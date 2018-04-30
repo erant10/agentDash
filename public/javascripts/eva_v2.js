@@ -260,7 +260,7 @@ function emptySuggestions() {
 var updateVoiceRecognition = function() {
     $('#recognition-confidence').html(95);
     $('#recognition-confidence').css('color','#3ac461');
-    $('#recognition-name').html('Jenny LaMee');
+    $('#recognition-name').html('Jenny Sarah Meredyth');
 }
 
 var audio = new Audio('audio/conversation.m4a');

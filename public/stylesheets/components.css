@@ -449,13 +449,12 @@ File: Components
   color: #797979;
 }
 .panel-title {
-  font-size: 15px;
-  font-weight: 600;
+  font-size: 35px;
   margin-bottom: 0;
   margin-top: 0;
   text-transform: uppercase;
   letter-spacing: 0.03em;
-  font-family: 'Hind Madurai', sans-serif;
+  font-family: 'KPMG Light','Hind Madurai', sans-serif;
 }
 .panel-sub-title {
   margin-bottom: 0px;
@@ -471,6 +470,13 @@ File: Components
 }
 .panel-color .panel-title {
   color: #ffffff;
+}
+.panel-no-color > .panel-heading {
+  background-color: #ffffff;
+}
+
+.panel-suggestion > .panel-heading {
+  background-color: #fafafa;
 }
 .panel-primary > .panel-heading {
   background-color: #188ae2;
@@ -505,6 +511,16 @@ File: Components
 .panel-inverse > .panel-heading {
   background-color: #3b3e47;
 }
+.panel-high-confidence > .panel-heading {
+  background-color: #429c45;
+}
+.panel-mid-confidence > .panel-heading {
+  background-color: #e18026;
+}
+.panel-low-confidence > .panel-heading {
+  background-color: #ba3f6d;
+}
+
 .panel-border {
   border-radius: 3px;
 }
@@ -514,6 +530,9 @@ File: Components
   border-radius: 3px;
   padding: 15px 20px 0;
   margin: -2px 0 0 0 !important;
+}
+.panel-border.suggestion .panel-heading {
+  background-color: #fafafa !important;
 }
 .panel-border .panel-body {
   padding: 15px 20px 20px 20px;
@@ -561,6 +580,23 @@ File: Components
 .panel-border.panel-inverse .panel-heading {
   border-color: #3b3e47 !important;
   color: #3b3e47 !important;
+}
+.panel-border.panel-no-color .panel-heading {
+  border-color: #ffffff !important;
+  color: #000000 !important;
+}
+
+.panel-border.panel-high-confidence .panel-heading {
+  border-color: #429c45 !important;
+  color: #429c45 !important;
+}
+.panel-border.panel-mid-confidence .panel-heading {
+  border-color: #e18026 !important;
+  color: #e18026 !important;
+}
+.panel-border.panel-low-confidence .panel-heading {
+  border-color: #ba3f6d !important;
+  color: #ba3f6d !important;
 }
 .panel-default > .panel-heading + .panel-collapse > .panel-body {
   border-top: 0 !important;

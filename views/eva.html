@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <head>
+    <title>Eva</title>
     <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
 
@@ -28,12 +29,15 @@
 
 </head>
 <body>
-<div class="navbar navbar-dark bg-primary box-shadow">
-    <div class="container d-flex justify-content-between">
+<div class="navbar navbar-dark bg-custom-navbar box-shadow">
+    <div class="container header-container d-flex justify-content-between">
         <a href="#" class="navbar-brand d-flex align-items-center">
-            <strong>Employee Virtual Assistant</strong>
+            <img class="brand-logo" src="images/KPMG.png"><span class="kpmg-font font-lg">Eva</span>
         </a>
-        <a class="navbar-right text-light" href="">logout</a>
+        <a class="navbar-right text-light agent-profile-link" href="">
+            <img class="profile-image" src="https://s3.amazonaws.com/uifaces/faces/twitter/cherif_b/128.jpg">
+            <i class="fas fa-chevron-down"></i>
+        </a>
 
     </div>
 </div>
@@ -41,7 +45,7 @@
 <div class="main-content row">
     <div class="col-lg-4 col-grid">
         <div class="row">
-            <div class="panel panel-border panel-primary">
+            <div class="panel panel-border panel-no-color shadow">
                 <div class="panel-heading">
                     <h3 class="panel-title">Customer Details</h3>
                 </div>
@@ -50,29 +54,42 @@
                         <div class="profile-avatar"></div>
                         <div class="profile-perffered"><i class="fas fa-star"></i></div>
                         <div class="profile-info">
-                            <label class="attribute">Name:</label> <span class="attribute-value" attribute="full-name">Jenny LaMee</span><br>
+                            <label class="attribute">Name:</label> <span class="attribute-value" attribute="full-name">Jenny Sarah Meredyth</span><br>
                             <label class="attribute">Customer LTV:</label> <span class="gold-member attribute-value" attribute="ltv"><i class="fas fa-star"></i>&nbsp;Gold</span><br>
-                            <label class="attribute">Location:</label> <span class="attribute-value" attribute="location">Sydney</span><br>
+                            <label class="attribute">Location:</label> <span class="attribute-value" attribute="location">Edinburgh</span><br>
                         </div>
 
                         <div class="profile-info-2" >
                             <label class="attribute">Gender:</label> <span class="attribute-value" attribute="gender">Female</span><br>
                             <label class="attribute">Account Name:</label> <span class="attribute-value" attribute="account-name">Blue Yonder Airlines</span><br>
                             <label class="attribute">Birthday:</label> <span class="attribute-value" attribute="birthday">14/05/1984</span><br>
-                            <label class="attribute">Business Phone:</label> <span class="attribute-value" attribute="business-phone">555-0135</span><br>
-                            <label class="attribute">Customer Since:</label> <span class="attribute-value" attribute="customer-since">12-03-2017</span><br>
-                            <label class="attribute">Email:</label> <span class="attribute-value" attribute="email">jenny_lamee@blueyonderairlines.com</span><br>
-                            <label class="attribute">Address:</label>
-                            <span class="attribute-value" attribute="address">111100 Epping Road,<br>
-                                <div style="margin-left:75px;">
-                                    <span >North Ryde NSW 0001</span><br>
-                                    <span >Sydney 0200</span><br>
-                                    <span >Australia</span><br>
-                                    <br>
+                            <label class="attribute">Phone number:</label> <span class="attribute-value" attribute="phone-number"><a href="">020 89772638</a></span><br>
+                            <label class="attribute">Mobile phone:</label> <span class="attribute-value" attribute="mobile-phone"><a href="">07557 546274</a></span><br>
+                            <label class="attribute">Customer Since:</label> <span class="attribute-value" attribute="customer-since">12-03-2013</span><br>
+                            <label class="attribute">Email:</label> <span class="attribute-value" attribute="email">jenny_meredyth@outlook.com</span><br>
+                            <div class="row">
+                                <div class="col-4">
+                                    <label class="attribute">Current Address:</label>
                                 </div>
+                                <div class="col-8" style="margin-left: -25px">
+                                    <span class="attribute-value" attribute="address">123 Burns Crescent,<br> Edinburgh,<br> EH11 9GP<br></span>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-4">
+                                    <label class="attribute">New Address:</label>
+                                </div>
+                                <div class="col-8" style="margin-left: -50px">
+                                    <span class="attribute-value" attribute="new-address">27 MC House,<br> Langdon Park,<br> Teddington, TW11 9FF<br></span>
+                                </div>
+                            </div>
+                                <!--<div style="margin-left:75px;">-->
+                                    <!--<span ></span><br>-->
+                                    <!--<span ></span><br>-->
+                                    <!--<br>-->
+                                <!--</div>-->
                             </span>
 
-                            <a class="profile-previous-engagements hvr-underline-from-center" href=""><span attribute="engagement-count">23</span> previous engagments<br></a><br>
                             <label class="attribute">Overall Sentiment:</label> <span class="attribute-value" attribute="overall-sentiment"><img src="images/neutral.png"></span><br>
 
                         </div>
@@ -82,14 +99,15 @@
         </div>
 
     <div class="row">
-            <div class="panel panel-border panel-primary">
+            <div class="panel panel-border panel-no-color shadow">
                 <div class="panel-heading">
                     <h3 class="panel-title">Engagemant Details</h3>
                 </div>
                 <div class="panel-body">
                     <div class="engage-details">
                         <label class="attribute">Time since last message:</label> <span attribute="customer-since">5 minutes</span><br>
-                        <label class="attribute">Elapsed Time:</label> <span id="timer-minutes">00</span>:<span id="timer-seconds">00</span>
+                        <label class="attribute">Elapsed Time:</label> <span id="timer-minutes">00</span>:<span id="timer-seconds">00</span><br>
+                        <a class="profile-previous-engagements hvr-underline-from-center" href=""><span attribute="engagement-count">23</span> previous engagments<br></a><br>
                     </div>
                     <div id="waveform"></div>
                     <script>
@@ -115,36 +133,10 @@
                 </div>
             </div>
         </div>
-        <div class="row">
-            <div class="panel panel-border panel-primary">
-                <div class="panel-heading">
-                    <h3 class="panel-title">Actions</h3>
-                </div>
-                <div class="panel-body">
-                    <div class="action-buttons">
-                        <div class="col-md-4 action action-end">
-                            <a id="stop_listen" class='btn btn-lg engagement-action-button action-listening hvr-pulse disabled'><i class="fas fa-phone-slash"></i></a>
-                            <br>
-                            <label>End</label>
-                        </div>
-                        <div class="col-md-4 action action-mute action-listening">
-                            <a class='btn btn-lg engagement-action-button hvr-pulse action-listening disabled'><i class="fas fa-microphone-slash"></i></a>
-                            <br>
-                            <label>Mute</label>
-                        </div>
-                        <div class="col-md-4 action action-start action-not-listening">
-                            <a id="start_listen" class='btn btn-lg engagement-action-button action-not-listening hvr-icon-spin hvr-pulse'><i class="fas fa-phone"></i></a>
-                            <br>
-                            <label>Start</label>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
     </div>
     <div class="col-lg-4 col-grid">
         <div class="row h-100">
-            <div class="panel panel-border panel-primary">
+            <div class="panel panel-border panel-no-color shadow">
                 <div class="panel-heading">
                     <h3 class="panel-title">Conversation</h3>
                 </div>
@@ -154,7 +146,7 @@
                             <div class="chat-history">
                                 <ul class=chat>
                                     <li class="left clearfix"><span class="chat-img float-left">
-                                        <img src="https://s3.amazonaws.com/uifaces/faces/twitter/olgary/128.jpg" alt="User Avatar" class="avatar rounded-circle" />
+                                        <img src="images/JennyFace.png" alt="User Avatar" class="avatar rounded-circle" />
                                         </span>
                                         <div class="chat-body clearfix">
                                             <div class="header">
@@ -180,7 +172,7 @@
                                         </div>
                                     </li>
                                     <li class="left clearfix"><span class="chat-img float-left">
-                                        <img src="https://s3.amazonaws.com/uifaces/faces/twitter/olgary/128.jpg" alt="User Avatar" class="avatar rounded-circle" />
+                                        <img src="images/JennyFace.png" alt="User Avatar" class="avatar rounded-circle" />
                                         </span>
                                         <div class="chat-body clearfix">
                                             <div class="header">
@@ -232,7 +224,7 @@
                                         </div>
                                     </li>
                                     <li class="left clearfix"><span class="chat-img float-left">
-                                        <img src="https://s3.amazonaws.com/uifaces/faces/twitter/olgary/128.jpg" alt="User Avatar" class="avatar rounded-circle" />
+                                        <img src="images/JennyFace.png" alt="User Avatar" class="avatar rounded-circle" />
                                         </span>
                                         <div class="chat-body clearfix">
                                             <div class="header">
@@ -258,7 +250,7 @@
                                         </div>
                                     </li>
                                     <li class="left clearfix"><span class="chat-img float-left">
-                                        <img src="https://s3.amazonaws.com/uifaces/faces/twitter/olgary/128.jpg" alt="User Avatar" class="avatar rounded-circle" />
+                                        <img src="images/JennyFace.png" alt="User Avatar" class="avatar rounded-circle" />
                                         </span>
                                         <div class="chat-body clearfix">
                                             <div class="header">
@@ -271,7 +263,7 @@
                                         </div>
                                     </li>
                                     <li class="left clearfix"><span class="chat-img float-left">
-                                        <img src="https://s3.amazonaws.com/uifaces/faces/twitter/olgary/128.jpg" alt="User Avatar" class="avatar rounded-circle" />
+                                        <img src="images/JennyFace.png" alt="User Avatar" class="avatar rounded-circle" />
                                         </span>
                                         <div class="chat-body clearfix">
                                             <div class="header">
@@ -329,37 +321,96 @@
     </div>
     <div class="col-lg-4 col-grid right-column">
         <div class="row h-20">
-            <div class="panel panel-border panel-primary">
+            <div class="panel panel-border panel-no-color action-panel shadow">
+                <div class="panel-heading">
+                </div>
+                <div class="panel-body">
+                    <div class="action-buttons">
+                        <div class="col-md-4 action action-start action-not-listening">
+                            <a id="start_listen" class='btn engagement-action-button action-not-listening hvr-icon-spin hvr-pulse shadow rounded'><i class="fas fa-phone"></i></a>
+                        </div>
+                        <div class="col-md-4 action action-mute action-listening">
+                            <a class='btn engagement-action-button hvr-pulse action-listening disabled shadow rounded'><i class="fas fa-microphone-slash"></i></a>
+                        </div>
+                        <div class="col-md-4 action action-end">
+                            <a id="stop_listen" class='btn engagement-action-button action-listening hvr-pulse disabled shadow rounded fa-rotate-225'><i class="fas fa-phone"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row h-20">
+            <div class="panel panel-border panel-no-color shadow">
                 <div class="panel-heading">
                     <h3 class="panel-title">Sentiment</h3>
                 </div>
 
                 <div class="panel-body">
-                    <div class="row">
-                        <div class="col-lg-12 text-center sentiment-value">
-                            <div id="container" style="height: 200px; max-width: 100%; margin: 0 auto"></div>
-                        </div>
-                        <!--
-                                                    <div class="col-lg-4">
-                                                        <label>Mood: </label><br><div class="insight-percentage odometer" id="insight-mood"></div>%
-                                                    </div>
-                                                    <div class="col-lg-4">
-                                                        <label>Tone: </label><br><div class="insight-percentage odometer" id="insight-tone"></div>%
-                                                    </div>
-                        -->
+                    <div class="text-center sentiment-info">
+                        <ul id="sentiment-list" class="list-inline">
+                            <li class="list-inline-item sentiment-time-and-effort">
+                                <div class="sentiment-icon sentiment-time-and-effort">
+                                    <i class="fas fa-stopwatch fa-2x"></i>
+                                </div>
+                                <span class="sentiment-label">Time and Effort</span>
+                                <div class="sentiment-change">
+                                    <i class="fas fa-long-arrow-alt-right fa-2x" style="display: none"></i>
+                                    <small class="no-impact-text" style="color: #0d0d0f; display:none">No impact</small>
+                                </div>
+                            </li>
+                            <li class="list-inline-item sentiment-integrity">
+                                <div class="sentiment-icon sentiment-integrity">
+                                    <i class="fas fa-briefcase fa-2x"></i>
+                                </div>
+                                <span class="sentiment-label">Integrity</span>
+                                <div class="sentiment-change">
+                                    <i class="fas fa-long-arrow-alt-right fa-2x" style="display: none"></i>
+                                    <small class="no-impact-text" style="color: #0d0d0f; display:none">No impact</small>
+                                </div>
+                            </li>
+                            <li class="list-inline-item sentiment-personalization">
+                                <div class="sentiment-icon sentiment-personalization">
+                                    <i class="fas fa-user fa-2x"></i>
+                                </div>
+                                <span class="sentiment-label">Personalization</span>
+                                <div class="sentiment-change">
+                                    <i class="fas fa-long-arrow-alt-right fa-2x" style="display: none"></i>
+                                    <small class="no-impact-text" style="color: #0d0d0f; display:none">No impact</small>
+                                </div>
+                            </li>
+                            <li class="list-inline-item sentiment-resolution">
+                                <div class="sentiment-icon sentiment-resolution">
+                                    <i class="fas fa-lightbulb fa-2x"></i>
+                                </div>
+                                <span class="sentiment-label">Resolution</span>
+                                <div class="sentiment-change">
+                                    <i class="fas fa-long-arrow-alt-right fa-2x" style="display: none"></i>
+                                    <small class="no-impact-text" style="color: #0d0d0f; display:none">No impact</small>
+                                </div>
+                            </li>
+                            <li class="list-inline-item sentiment-empathy">
+                                <div class="sentiment-icon sentiment-empathy">
+                                    <i class="fas fa-heart fa-2x"></i>
+                                </div>
+                                <span class="sentiment-label">Empathy</span>
+                                <div class="sentiment-change">
+                                    <i class="fas fa-long-arrow-alt-right fa-2x" style="display: none"></i>
+                                    <small class="no-impact-text" style="color: #0d0d0f; display:none">No impact</small>
+                                </div>
+                            </li>
+                        </ul>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="row h-80">
-            <div class="panel panel-border panel-primary">
+        <div class="row h-60">
+            <div class="panel shadow">
                 <div class="panel-heading">
                     <h3 class="panel-title">Suggested Actions</h3>
                 </div>
-                <div class="panel-body">
-                    <div class="panel-body suggestions-panel-body">
-
-                    </div>
+                <div class="panel-body suggestion-wrapper">
+                    <div class="no-suggestions">Suggestions will appear here once you start the conversation with the customer.</div>
                 </div>
             </div>
         </div>
@@ -368,11 +419,11 @@
 
 <script src='http://cdnjs.cloudflare.com/ajax/libs/handlebars.js/3.0.0/handlebars.min.js'></script>
 <script src='javascripts/bundle.js'></script>
-<script src="javascripts/eva_v2.js"></script>
+<script src="javascripts/eva_v3.js"></script>
 
 <script id="message-template" type="text/x-handlebars-template">
     <li class="left clearfix" data-timing-from="{{from}}" data-timing-to="{{to}}"><span class="chat-img float-left">
-        <img src="https://s3.amazonaws.com/uifaces/faces/twitter/olgary/128.jpg" alt="User Avatar" class="avatar rounded-circle" />
+        <img src="images/JennyFace.png" alt="User Avatar" class="avatar rounded-circle" />
         </span>
         <div class="chat-body clearfix">
             <div class="header">
@@ -420,7 +471,7 @@
                 <small>Confidence: 96.6%</small>
             </div>
             <p class="mb-1"><span class="large-icon"><i class="fa fa-dollar-sign"></i></span><span class="suggestion-text">Explain Premium Reduction Methods</span></p>
-            </div>
+        </div>
     </span>
 
     <span class="suggestion hvr-pulse list-group-item list-group-item-action flex-column align-items-start discount mid-confidence">
@@ -465,6 +516,35 @@
     </div>
     <p class="mb-1"><span class="large-icon"><i class="fa fa-briefcase"></i></span><span class="suggestion-text">Offer Insurance Bundles</span></p>
     </span>
+</script>
+
+<script id="suggestion-template" type="text/x-handlebars-template">
+    {{#each suggestions}}
+        <div class="panel suggestion panel-border panel-{{confidenceAbbrev}}-confidence" style="display:none;">
+            <div class="panel-heading">
+                <div class="row">
+                    <div class="col-2"><img src="images/icons/{{icon}}.png" height="50px"></div>
+                    <div class="col-10">
+                        <div class="d-flex w-100 justify-content-between">
+                            <small class="suggestion-confidence">
+                                {{#each stars}}
+                                    {{#if this}}
+                                        <i class="fas fa-star"></i>
+                                    {{else}}
+                                        <i class="far fa-star"></i>
+                                    {{/if}}
+                                {{/each}}
+                            </small>
+                        </div>
+                        <p class="mb-1"><span class="suggestion-title">{{title}}</span></p>
+                    </div>
+                </div>
+            </div>
+            <div class="panel-collapse collapse">
+                <div class="panel-body">{{body}}</div>
+            </div>
+        </div>
+    {{/each}}
 </script>
 
 </body>

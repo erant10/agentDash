@@ -13,7 +13,7 @@
 
 .profile-avatar {
 	/* This image is 687 wide by 1024 tall, similar to your aspect ratio */
-    background-image: url('https://s3.amazonaws.com/uifaces/faces/twitter/olgary/128.jpg');
+    background-image: url('../images/JennyFace.png');
     /* make a square container */
     width: 120px;
     height: 120px;
@@ -29,8 +29,8 @@
 .profile-perffered {
 	color: #fd7e14;
 	position: absolute;
-    top: 50px;
-    left: 120px;
+    top: 65px;
+    left: 117px;
     font-size: x-large;
 }
 
@@ -61,15 +61,20 @@ a.profile-previous-engagements {
 }
 
 .action-end>a {
-	background-color:#f44242;
+	background-color:#d00057;
 }
 
 .action-mute>a {
-	background-color:#4286f4;
+	background-color:#0196d8;
 }
 
 .action-start>a {
-	background-color:#3ac461;
+	background-color:#42b0b0;
+}
+
+.btn.disabled {
+    opacity: .30 !important;
+    cursor: not-allowed !important;
 }
 
 .sentiment-value {
@@ -83,6 +88,11 @@ a.profile-previous-engagements {
 
 .suggestion {
 	cursor: pointer;
+    background-color: #fafafa;
+}
+
+.panel-suggestion {
+    background-color: #fafafa;
 }
 
 .odometer {
@@ -100,4 +110,157 @@ img.avatar {
 
 .suggestion-text {
     margin: 5px;
+}
+
+#sentiment-list li {
+    list-style-type: none;
+    padding: 0;
+    margin: 2px 10px;
+}
+
+.sentiment-icon {
+    height: 70px;
+    width: 70px;
+    border-radius: 50%;
+    padding: 17px;
+    margin: auto;
+}
+
+.sentiment-icon > svg {
+    color: #ffffff !important;
+}
+
+.sentiment-label {
+    font-size: small;
+    font-weight: 600;
+}
+
+.sentiment-time-and-effort > .sentiment-icon {
+    background-color: #f68d2e;
+}
+.sentiment-time-and-effort > .sentiment-label {
+    color: #f68d2e;
+}
+
+.sentiment-integrity > .sentiment-icon {
+    background-color: #005eb8;
+}
+.sentiment-integrity > .sentiment-label {
+    color: #005eb8;
+}
+
+.sentiment-personalization > .sentiment-icon {
+    background-color: #eaaa00;
+}
+.sentiment-personalization > .sentiment-label {
+    color: #eaaa00;
+}
+
+.sentiment-resolution > .sentiment-icon{
+    background-color: #00a3a1;
+}
+.sentiment-resolution > .sentiment-label{
+    color: #00a3a1;
+}
+
+.sentiment-empathy > .sentiment-icon{
+    background-color: #bc204b;
+}
+.sentiment-empathy > .sentiment-label{
+    color: #bc204b;
+}
+
+.sentiment-change {
+    color: #eaaa00;
+}
+.bg-custom-navbar {
+    background-color: #2b3245;
+}
+
+.navbar .container {
+    margin-right: 5% !important;
+    margin-left: 5% !important;
+    max-width: 100%;
+}
+
+.kpmg-font {
+    font-family: "KPMG Light";
+    margin-top: -8px;
+    margin-bottom: -8px;
+}
+
+.font-lg {
+    font-size: 50px;
+}
+
+.brand-logo {
+    padding-right: 30px;
+}
+
+.action-panel .panel-body {
+    min-height: 110px;
+    margin: 0 75px;
+}
+
+.agent-profile-link a:hover {
+    text-decoration: none;
+}
+
+.agent-profile-link .profile-image {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+}
+
+.fa-rotate-225 {
+    -webkit-transform: rotate(225deg);
+    -moz-transform: rotate(225deg);
+    -ms-transform: rotate(225deg);
+    -o-transform: rotate(225deg);
+    transform: rotate(225deg);
+}
+
+.suggestion-title {
+    font-weight: 600;
+    font-size: 120%;
+}
+
+.suggestion .panel-body {
+    border:none;
+    font-size:14px;
+    padding-bottom:0;
+    margin-bottom:0;
+}
+
+.suggestion .panel-heading {
+    padding: 10px !important;
+}
+
+.suggestion-confidence {
+    color: #767676;
+    font-size: 80%;
+    font-weight: 400;
+}
+
+/* Styles go here */
+.fa-long-arrow-alt-right.down {
+    transform: rotate(45deg);
+    transition: transform 1s linear;
+    color: #ff0000
+}
+
+.fa-long-arrow-alt-right.up {
+    transform: rotate(-45deg);
+    transition: transform 1s linear;
+    color: #43b02a;
+}
+
+.fa-long-arrow-alt-right.centered {
+    transform: rotate(0deg);
+    transition: transform 1s linear;
+    color: #eaaa00;
+}
+
+.suggestion-confidence {
+    color: #eaaa00;
 }
