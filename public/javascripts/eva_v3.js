@@ -296,7 +296,7 @@ var conversation = [
                 confidence: 93.8,
                 stars: [true, true, true, true, true],
                 title: 'Send quotes via SMS',
-                body: 'I have sent you quotes via SMS for 3 other insurers. Would you like any additional information?',
+                body: 'I have sent you a quote via SMS for 3 other insurers. Would you like any additional information?',
                 triggered: true
             },{
                 confidenceAbbrev:'mid',
@@ -412,7 +412,7 @@ var addSuggestions = function(suggestions) {
     var template = Handlebars.compile( $('#suggestion-template').html() );
     $('.suggestion-wrapper').append(template({suggestions: suggestions }));
 
-    $('.suggestion').show('fold');
+    $('.suggestion').show('slow');
 
     $(".suggestion .panel-heading").hover(
         function() {
@@ -509,7 +509,7 @@ function playAudio() {
     function playConversation(arr, index) {
         var time;
         if (index === 0) {
-            audio.play();
+           audio.play();
         } else if (index > 0) {
             addConversationNode(index-1);
         }

@@ -61,7 +61,6 @@
 
                         <div class="profile-info-2" >
                             <label class="attribute">Gender:</label> <span class="attribute-value" attribute="gender">Female</span><br>
-                            <label class="attribute">Account Name:</label> <span class="attribute-value" attribute="account-name">Blue Yonder Airlines</span><br>
                             <label class="attribute">Birthday:</label> <span class="attribute-value" attribute="birthday">14/05/1984</span><br>
                             <label class="attribute">Phone number:</label> <span class="attribute-value" attribute="phone-number"><a href="">020 89772638</a></span><br>
                             <label class="attribute">Mobile phone:</label> <span class="attribute-value" attribute="mobile-phone"><a href="">07557 546274</a></span><br>
@@ -79,7 +78,7 @@
                                 <div class="col-4">
                                     <label class="attribute">New Address:</label>
                                 </div>
-                                <div class="col-8" style="margin-left: -50px">
+                                <div class="col-8" style="margin-left: -25px">
                                     <span class="attribute-value" attribute="new-address">27 MC House,<br> Langdon Park,<br> Teddington, TW11 9FF<br></span>
                                 </div>
                             </div>
@@ -249,29 +248,16 @@
                                             </p>
                                         </div>
                                     </li>
-                                    <li class="left clearfix"><span class="chat-img float-left">
-                                        <img src="images/JennyFace.png" alt="User Avatar" class="avatar rounded-circle" />
+                                    <li class="right clearfix"><span class="chat-img float-right">
+                                        <img src="images/bot_icon.gif" height="60px" alt="User Avatar" class="rounded-circle" />
                                         </span>
                                         <div class="chat-body clearfix">
                                             <div class="header">
-                                                <strong class="primary-font">Jenny</strong> <small class="float-right text-muted">
-                                                <span class="glyphicon glyphicon-time"></span>6 mins ago</small>
+                                                <small class=" text-muted"><span class="glyphicon glyphicon-time"></span>6 mins ago</small>
+                                                <strong class="float-right primary-font">VA</strong>
                                             </div>
                                             <p>
-                                                I received a better quote from a different insurance company
-                                            </p>
-                                        </div>
-                                    </li>
-                                    <li class="left clearfix"><span class="chat-img float-left">
-                                        <img src="images/JennyFace.png" alt="User Avatar" class="avatar rounded-circle" />
-                                        </span>
-                                        <div class="chat-body clearfix">
-                                            <div class="header">
-                                                <strong class="primary-font">Jenny</strong> <small class="float-right text-muted">
-                                                <span class="glyphicon glyphicon-time"></span>6 mins ago</small>
-                                            </div>
-                                            <p>
-                                                I am very disappointed
+                                                I understand. There are a number of ways you can reduce your premium
                                             </p>
                                         </div>
                                     </li>
@@ -280,26 +266,24 @@
                                         </span>
                                         <div class="chat-body clearfix">
                                             <div class="header">
-                                                <small class=" text-muted"><span class="glyphicon glyphicon-time"></span>5 mins ago</small>
+                                                <small class=" text-muted"><span class="glyphicon glyphicon-time"></span>6 mins ago</small>
                                                 <strong class="float-right primary-font">VA</strong>
                                             </div>
                                             <p>
-                                                There are a number of ways you can reduce your premium, have you thought about:
+                                                Would you like one of our sales representatives to call you so you can discuss these options with them?
                                             </p>
                                         </div>
                                     </li>
-                                    <li class="right clearfix"><span class="chat-img float-right">
-                                        <img src="images/bot_icon.gif" height="60px" alt="User Avatar" class="rounded-circle" />
+                                    <li class="left clearfix"><span class="chat-img float-left">
+                                        <img src="images/JennyFace.png" alt="User Avatar" class="avatar rounded-circle" />
                                         </span>
                                         <div class="chat-body clearfix">
                                             <div class="header">
-                                                <small class=" text-muted"><span class="glyphicon glyphicon-time"></span>5 mins ago</small>
-                                                <strong class="float-right primary-font">VA</strong>
+                                                <strong class="primary-font">Jenny</strong> <small class="float-right text-muted">
+                                                <span class="glyphicon glyphicon-time"></span>5 mins ago</small>
                                             </div>
                                             <p>
-                                                1. Installing security lighting<br>
-                                                2. Using a safe<br>
-                                                3. Paying annually
+                                                Yes please
                                             </p>
                                         </div>
                                     </li>
@@ -520,7 +504,7 @@
 
 <script id="suggestion-template" type="text/x-handlebars-template">
     {{#each suggestions}}
-        <div class="panel suggestion panel-border panel-{{confidenceAbbrev}}-confidence" style="display:none;">
+        <div class="panel suggestion panel-border  panel-{{confidenceAbbrev}}-confidence" style="display:none;">
             <div class="panel-heading">
                 <div class="row">
                     <div class="col-2"><img src="images/icons/{{icon}}.png" height="50px"></div>

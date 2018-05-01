@@ -246,7 +246,7 @@ img.avatar {
 .fa-long-arrow-alt-right.down {
     transform: rotate(45deg);
     transition: transform 1s linear;
-    color: #ff0000
+    color: #ff0000;
 }
 
 .fa-long-arrow-alt-right.up {

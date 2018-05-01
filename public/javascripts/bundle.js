@@ -26911,7 +26911,7 @@ $(document).on('click', SELECTORS.startListenButton, function () {
         max_alternatives: 4,
         objectMode: true,
         interim_results: true,
-        speaker_labels: false,
+        speaker_labels: true,
         model:"en-US_BroadbandModel"
     });
 
@@ -26944,6 +26944,7 @@ function toggleListening() {
     return !listening;
 }
 
+// TODO
 function separateSpeakers(data, content) {
     var currentIndex = 0;
 

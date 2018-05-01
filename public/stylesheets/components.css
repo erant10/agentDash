@@ -526,7 +526,7 @@ File: Components
 }
 .panel-border .panel-heading {
   background-color: #ffffff;
-  border-top: 3px solid #ccc !important;
+  border: 3px solid #ccc !important;
   border-radius: 3px;
   padding: 15px 20px 0;
   margin: -2px 0 0 0 !important;
@@ -589,7 +589,23 @@ File: Components
 .panel-border.panel-high-confidence .panel-heading {
   border-color: #429c45 !important;
   color: #429c45 !important;
+  padding: 15px !important;
+  -webkit-animation-name: hvr-pulse;
+  animation-name: hvr-pulse;
+  -webkit-animation-duration: 2s;
+  animation-duration: 2s;
+  -webkit-animation-timing-function: linear;
+  animation-timing-function: linear;
+ -webkit-animation-iteration-count: 3;
+ animation-iteration-count: 3;
 }
+
+.panel-border.panel-high-confidence .panel-heading:hover{
+  -webkit-animation: 0;
+  animation: 0;
+
+}
+
 .panel-border.panel-mid-confidence .panel-heading {
   border-color: #e18026 !important;
   color: #e18026 !important;
